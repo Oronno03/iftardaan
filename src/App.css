@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "aj";
+  src: url("./assets/Aljawi.otf");
+}
+
+@font-face {
+  font-family: "Argentum";
+  src: url("./assets//ArgentumSans-MediumItalic.ttf");
+}
+
+.container {
+  max-width: 100vw !important;
+}
+
+.hero__img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero__img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.hero__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5rem;
+}
+
+.text__heading {
+  font-size: 10rem;
+  font-family: "aj";
+  letter-spacing: 1rem;
+  font-weight: 300;
+  margin-bottom: -1rem;
+  text-align: center;
+}
+
+.text__year {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Courier New";
+}
+
+.text__subtitle {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+}
+
+/* ABOUT */
+.about__container {
+  padding: 5rem;
+}
+
+.about__section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  min-height: 50vh;
+  gap: 2rem;
+}
+
+.right__side {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+.about__text {
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: sticky;
+  top: 1rem;
+  font-family: "Argentum";
+}
+
+.about__text h1 {
+  text-align: center;
+  color: black;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.about__text p {
+  text-align: justify;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.about__pic {
+  width: 70%;
+  display: block;
+  border-radius: 20px;
+}
+
+/* COUNTER */
+.counter__container {
+  padding: 5rem;
+}
+
+.counter__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45vh;
+  gap: 15rem;
+}
+
+.counter__card {
+  width: 30%;
+  padding: 2rem;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.counter__card__icon {
+  color: aqua;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.counter__card__count {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.counter__card__text {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .text__heading {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
+  .text__subtitle {
+    font-size: 0.9rem;
+  }
+
+  .about__container {
+    padding: 1rem;
+  }
+
+  .about__section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .about__text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .right__side {
+    align-items: center;
+  }
+
+  .counter__contaier {
+    padding: 1rem;
+  }
+
+  .counter__section {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .counter__card {
+    width: 300px;
+    padding: 1rem;
+  }
+}
